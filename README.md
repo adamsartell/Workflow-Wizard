@@ -40,7 +40,7 @@ This is a multi-step workflow application built with React and Vite, designed to
 
     -   `Review` step becomes clickable only after all preceding steps are completed.
 
--   **Local Storage Persistence:** Automatically saves and loads workflow selections, allowing users to resume where they left off.
+-   **Local Storage Persistence:** Saves and loads workflow selections, allowing users to resume where they left off.
 
 -   **Progress Bar:** Visual indicator of current, completed, and upcoming steps.
 
