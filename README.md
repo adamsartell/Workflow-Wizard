@@ -2,6 +2,8 @@
 
 This is a multi-step workflow application built with React and Vite, designed to guide users through a series of selections to configure a custom workflow. It features dynamic step rendering, progress tracking, and local storage persistence.
 
+![Workflow wizard app screenshot](https://github.com/adamsartell/Workflow-Wizard/blob/main/public/workflow-screenshot.png)
+
 ## Table of Contents
 
 -   [Features](#features)
