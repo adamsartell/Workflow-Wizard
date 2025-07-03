@@ -35,14 +35,6 @@ export const WorkflowProvider = ({
 	// --- Local Storage Management ---
 
 	/**
-	 * Effect hook to automatically save workflow selections to local storage
-	 * whenever `workflowSelections` state changes. This ensures data persistence.
-	 */
-	useEffect(() => {
-		saveWorkflowSelectionsToLocalStorage(workflowSelections);
-	}, [workflowSelections]);
-
-	/**
 	 * Saves the current `workflowSelections` to local storage.
 	 * This is typically triggered by a "Save Draft" or "Save and Finish Later" action.
 	 */
