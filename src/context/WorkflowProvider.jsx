@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { WorkflowContext } from "./WorkflowContext";
 import {
 	saveWorkflowSelectionsToLocalStorage,
