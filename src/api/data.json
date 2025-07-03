@@ -1,0 +1,105 @@
+{
+	"name": "New Workflow",
+	"steps": [
+		{
+			"id": "criteriaStep",
+			"name": "Criteria",
+			"prompt": "What will this workflow be based on?",
+			"categories": [
+				{
+					"name": "Company"
+				},
+				{
+					"name": "Record"
+				},
+				{
+					"name": "Website"
+				},
+				{
+					"name": "Expiration"
+				},
+				{
+					"name": "User"
+				},
+				{
+					"name": "Group"
+				},
+				{
+					"name": "Integration"
+				}
+			]
+		},
+		{
+			"id": "criteriaStep2",
+			"name": "Criteria2",
+			"prompt": "Which record type(s) should be included?",
+			"selectAll": "true",
+			"subStep": "true",
+			"categories": [
+				{
+					"name": "Password"
+				},
+				{
+					"name": "Company KB article"
+				},
+				{
+					"name": "Central KB article"
+				},
+				{
+					"name": "Process"
+				},
+				{
+					"name": "Website"
+				},
+				{
+					"name": "Rack"
+				},
+				{
+					"name": "Network"
+				},
+				{
+					"name": "Asset"
+				}
+			]
+		},
+		{
+			"id": "triggerStep",
+			"name": "Trigger",
+			"prompt": "What should trigger this workflow?",
+			"categories": [
+				{
+					"name": "Record created"
+				},
+				{
+					"name": "Record updated"
+				}
+			]
+		},
+		{
+			"id": "actionStep",
+			"name": "Action",
+			"prompt": "What should happen once the workflow begins?",
+			"subPrompt": "Select at least 1 action to continue. You can add additional actions later.",
+			"categories": [
+				{
+					"name": "Add flag",
+					"text": "add a flag"
+				},
+				{
+					"name": "Send email",
+					"text": "send an email"
+				},
+				{
+					"name": "Send webhook",
+					"text": "send a webhook"
+				}
+			]
+		},
+		{
+			"id": "reviewStep",
+			"name": "Review",
+			"prompt": "Review your workflow below. Click a step to make edits if needed.",
+			"categories": []
+		}
+	]
+}

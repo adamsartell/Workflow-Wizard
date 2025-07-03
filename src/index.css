@@ -1,0 +1,35 @@
+:root {
+	/* Font Family: Specifies the primary font stack for the entire application.
+     `system-ui` prioritizes the native OS font for better performance and look. */
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+	/* Line Height: Sets the height of each line of text, improving readability. */
+	line-height: 1.5;
+
+	/* Font Weight: Sets the default font weight for text. */
+	font-weight: 400;
+
+	/* Text Color: Default color for text within the root element. */
+	color: rgba(255, 255, 255, 0.87);
+
+	/* Background Color: Default background color for the entire page. */
+	background-color: #242424;
+
+	/* Box Sizing: Ensures consistent box model behavior across browsers.
+     `border-box` includes padding and border in the element's total width and height. */
+	box-sizing: border-box;
+
+	/* Padding and Margin: Resets default browser padding and margin for the root element. */
+	padding: 0;
+	margin: 0;
+
+	/* Font Synthesis: Controls whether missing glyphs for bold/italic are synthesized by the browser. */
+	font-synthesis: none;
+
+	/* Text Rendering: Optimizes text rendering for legibility. */
+	text-rendering: optimizeLegibility;
+
+	/* Font Smoothing (Webkit/Mozilla): Enhances text rendering for smoother edges, especially on macOS. */
+	-webkit-font-smoothing: antialiased; /* For Webkit browsers (Chrome, Safari) */
+	-moz-osx-font-smoothing: grayscale; /* For Mozilla Firefox on macOS */
+}
