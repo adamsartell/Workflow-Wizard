@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-	/* Font Family: Specifies the primary font stack for the entire application.
-     `system-ui` prioritizes the native OS font for better performance and look. */
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* Font Family: Specifies the primary font stack for the entire application. */
+	font-family: Roboto;
 
 	/* Line Height: Sets the height of each line of text, improving readability. */
 	line-height: 1.5;

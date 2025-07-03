@@ -16,7 +16,11 @@ export default function Category({
 			className={`
         p-2 w-full border rounded-sm flex items-center gap-2 cursor-pointer
         hover:bg-[#DEEAF8]
-        ${selected ? "border-[#1849a9] border-2 bg-[#DEEAF8]" : ""}
+        ${
+			selected
+				? "border-[#1849a9] border-2 bg-[#DEEAF8]"
+				: "border-[#d1d1d1]"
+		}
       `}
 		>
 			{/*
