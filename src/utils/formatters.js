@@ -1,5 +1,5 @@
 // Reformat category name to map to icon map
-function reformatName(originalName) {
+function toCamelCase(originalName) {
 	if (!originalName) {
 		return "";
 	}
@@ -23,4 +23,4 @@ function reformatName(originalName) {
 	return reformatted;
 }
 
-export default reformatName;
+export default toCamelCase;

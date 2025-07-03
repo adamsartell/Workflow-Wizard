@@ -1,5 +1,5 @@
 import { icons } from "../../../utils/Icons";
-import reformatName from "../../../utils/formatters";
+import toCamelCase from "../../../utils/formatters";
 
 /**
  * Category Component
@@ -25,12 +25,11 @@ export default function Category({
 		>
 			{/*
         Displays an icon associated with the category.
-        - `reformatName(name)`: Transforms the category name (e.g., "Company KB article" to "companyKbArticle")
+        - `toCamelCase(name)`: Transforms the category name (e.g., "Company KB article" to "companyKbArticle")
           to match the keys in the `icons` object.
-        - `icons[reformatName(name)]`: Accesses the corresponding JSX icon component from the `icons` map.
-        - The icon will only render if a matching key exists in the `icons` object.
+        - `icons[toCamelCase(name)]`: Accesses the corresponding JSX icon component from the `icons` map.
       */}
-			<span aria-hidden="true">{icons[reformatName(name)]}</span>
+			<span aria-hidden="true">{icons[toCamelCase(name)]}</span>
 			{name}
 		</div>
 	);
