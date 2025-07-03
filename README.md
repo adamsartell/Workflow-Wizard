@@ -63,39 +63,40 @@ This is a multi-step workflow application built with React and Vite, designed to
 ## Project Structure
 
 The project follows a standard React application structure. Key directories and files include:
-
+```
 ├── public/
 ├── src/
-│ ├── api/
-│ │ └── data.json # Workflow configuration data
-│ ├── components/
-│ │ ├── common/
-│ │ │ └── button/ # Reusable button components (BackButton, NextButton, SaveButton)
-│ │ │ └── form/ # Reusable form inputs (RadioInput, CheckboxInput)
-│ │ ├── features/
-│ │ │ └── WorkflowContainer.jsx # Main workflow UI orchestration
-│ │ │ └── Content/ # Step-specific content (Prompt, Selection, Review)
-│ │ │ └── Layout/ # Overall layout components (Header, Footer)
-│ │ │ └── Progress/ # Progress bar components (ProgressContainer, Step, CurrentStep, CompletedStep)
-│ │ └── styles/ # Common CSS modules or Tailwind utility classes
-│ ├── context/
-│ │ ├── WorkflowContext.js # React Context definition
-│ │ └── WorkflowProvider.jsx # Context provider managing workflow state
-│ │ └── useWorkflow.js # Custom hook for consuming workflow context
-│ ├── utils/
-│ │ ├── Icons.jsx # Mapping of icon names to React icon components
-│ │ ├── formatters.js # Utility for reformatting names (e.g., for icon keys)
-│ │ └── localStorage.js # Helper functions for localStorage operations
-│ │ └── selectionHelpers.js # Helper functions for complex selection logic
-│ ├── App.css # Global CSS styles
-│ ├── App.jsx # Root React component
-│ └── main.jsx # Entry point for the React application
+│   ├── api/
+│   │   └── data.json                   # Workflow configuration data
+│   ├── assets/
+│   ├── components/
+│   │   ├── common/
+│   │   │   └── button/                 # Reusable button components (BackButton, NextButton, SaveButton)
+│   │   │   └── form/                   # Reusable form inputs (RadioInput, CheckboxInput)
+│   │   ├── features/
+│   │   │   └── WorkflowContainer.jsx   # Main workflow UI orchestration
+│   │   │   └── Content/                # Step-specific content (Prompt, Selection, Review)
+│   │   │   └── Layout/                 # Overall layout components (Header, Footer)
+│   │   │   └── Progress/               # Progress bar components (ProgressContainer, Step, CurrentStep, CompletedStep)
+│   │   └── styles/                     # Common CSS modules or Tailwind utility classes
+│   ├── context/
+│   │   ├── WorkflowContext.js          # React Context definition
+│   │   └── WorkflowProvider.jsx        # Context provider managing workflow state
+│   │   └── useWorkflow.js              # Custom hook for consuming workflow context
+│   ├── utils/
+│   │   ├── Icons.jsx                   # Mapping of icon names to React icon components
+│   │   ├── formatters.js               # Utility for reformatting names (e.g., for icon keys)
+│   │   └── localStorage.js             # Helper functions for localStorage operations
+│   │   └── selectionHelpers.js         # Helper functions for complex selection logic
+│   ├── App.css                         # Global CSS styles
+│   ├── App.jsx                         # Root React component
+│   └── main.jsx                        # Entry point for the React application
 ├── .eslintrc.cjs
 ├── index.html
 ├── package.json
 ├── vite.config.js
-└── README.md # This file
-
+└── README.md                           # This file
+```
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
@@ -110,23 +111,26 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. **Clone the repository:**
 
+```
 git clone
+cd <your-project-folder>
+```
 
 2. **Install dependencies:**
-
+```
 npm install
-
-or
+# or
 yarn install
+```
 
 ### Running the Application
 
 1. **Start the development server:**
-
+```
 npm run dev
-
-or
+# or
 yarn dev
+```
 
 2. Open your browser and navigate to `http://localhost:5173` (or the port indicated in your terminal).
 
